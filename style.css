@@ -6,8 +6,36 @@ body {
 
 #container {
     border: 2px solid black;
+    border-top: 0;
+    border-right: 0;
+
     height: 592px;
     width: 592px;
+
     align-self: center;
+  
+    display: flex;
+    flex-direction: column;
 }
  /* tile size 37px*/
+
+#container .row {
+    border: 2px solid black;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+
+    height: 37px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.row .tile {
+    border: 2px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+
+    width: 37px;
+}
