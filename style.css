@@ -16,6 +16,7 @@ body {
   
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
 }
  /* tile size 37px*/
 
@@ -29,6 +30,7 @@ body {
 
     display: flex;
     flex-direction: row;
+    flex: 1 1 auto;
 }
 
 .row .tile {
@@ -38,4 +40,6 @@ body {
     border-left: 0;
 
     width: 37px;
+    
+    flex: 1 1 auto;
 }
