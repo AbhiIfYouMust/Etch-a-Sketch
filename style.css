@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+#container {
+    border: 2px solid black;
+    height: 592px;
+    width: 592px;
+    align-self: center;
+}
+ /* tile size 37px*/
