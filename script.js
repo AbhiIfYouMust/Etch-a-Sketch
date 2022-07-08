@@ -18,7 +18,17 @@ function CreateGrid(dimension) {
     }
 }
 
-CreateGrid(16);
+CreateGrid(50);
+
+let slider = document.getElementById("myRange");
+let output = document.getElementById("demo");
+// Display the default slider value
+document.querySelector("p").textContent = slider.value; 
+
+// Update the current slider value
+slider.oninput = function() {
+  document.querySelector("p").innerHTML = this.value;
+}
 
 
 const TileList = document.querySelectorAll(".tile");
@@ -27,5 +37,4 @@ TileList.forEach(addClassHover);
 function addClassHover(tile) {
     tile.addEventListener("mouseover", () => tile.classList.add("hovered"));
 }
-
 
