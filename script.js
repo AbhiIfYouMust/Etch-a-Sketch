@@ -13,10 +13,19 @@ function CreateGrid(dimension) {
         for (let j = dimension; j > 0; j--) {
             const tile = document.createElement("div");
             tile.classList.add("tile");
-            row.appendChild(tile)
+            row.appendChild(tile);
         }
     }
 }
 
-
 CreateGrid(16);
+
+
+const TileList = document.querySelectorAll(".tile");
+TileList.forEach(addClassHover);
+
+function addClassHover(tile) {
+    tile.addEventListener("mouseover", () => tile.classList.add("hovered"));
+}
+
+
