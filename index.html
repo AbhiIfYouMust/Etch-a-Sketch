@@ -13,12 +13,16 @@
     <h1>Etch-a-Sketch</h1>
 
     <div id="container">
+        <p>The slider below sets the number of squares per side. Adjust the slider to begin!</p>
     </div>
     
 
     <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        <p>Adjust the slider to set grid size.</p>
+
+            <input class="bar" type="range" id="myRange" min="1" max="100" value="0" onchange="rangevalue.value=value"/>
+            <span class="highlight"></span><br>
+            <output id="rangevalue">0</output>
+
     </div>
       
 <script src="script.js"></script>    
